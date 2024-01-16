@@ -42,6 +42,9 @@ public String pigLatin(String sWord)
   {
     return sWord + "ay";
   }
+else if(findQU(sWord)==0){
+   return sWord.substring(2)+"quay"; 
+  }
   else if(findFirstVowel(sWord)==0){
     return sWord+"way";
   }
@@ -49,9 +52,7 @@ public String pigLatin(String sWord)
     return sWord.substring(findFirstVowel(sWord))+sWord.substring(0,findFirstVowel(sWord))+
     "ay";
   }
-  else if(findQU(sWord)==0){
-   return sWord.substring(2)+"quay"; 
-  }
+  
   
   
 
